@@ -1,0 +1,6 @@
+model_year: 2022
+unsupported_commands_by_ecu:
+  6B4:
+  - 6B4.694.22D410:Fiat_HVBAT_SOC
+  742:
+  - 742.22A022|fc=1:Fiat_TP_FL,Fiat_TP_FR,Fiat_TP_RL,Fiat_TP_RR,Fiat_TP_SPARE
