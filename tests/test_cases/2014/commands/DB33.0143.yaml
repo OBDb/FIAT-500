@@ -1,0 +1,5 @@
+command_id: DB33.0143
+test_cases:
+- expected_values:
+    LOAD_ABS: 179.60784
+  response: 18DAF11004414301CA000000
