@@ -1,0 +1,5 @@
+command_id: DB33.0107
+test_cases:
+- expected_values:
+    LONGFT1: 59.5
+  response: 18DAF110034107F0
