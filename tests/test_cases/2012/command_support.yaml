@@ -37,6 +37,7 @@ supported_commands_by_ecu:
   - DB33.010D:VSS
   - DB33.010E:SPARKADV
   - DB33.010F:IAT
+  - DB33.0111:TP
   - DB33.012F:FLI
   - DB33.0131:CLR_DIST
   - DB33.0133:BARO
