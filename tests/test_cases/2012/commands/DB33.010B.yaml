@@ -4,5 +4,5 @@ test_cases:
     MAP: 21
   response: 18DAF11003410B15
 - expected_values:
-    MAP: 91
-  response: 18DAF11003410B5B
+    MAP: 92
+  response: 18DAF11003410B5C
