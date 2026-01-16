@@ -75,7 +75,7 @@ unsupported_commands_by_ecu:
   - 740.4C0.22A0F3|fc=1:Fiat_TP_RR_V2,Fiat_TT_RR_V2
   - 740.4C0.22A0F4|fc=1:Fiat_TP_RL_V2,Fiat_TT_RL_V2
   "742":
-  - 742.22A022|fc=1:Fiat_TP_FL_V3,Fiat_TP_FR_V3,Fiat_TP_RL_V3,Fiat_TP_RR_V3,Fiat_TP_SPARE
+  - 742.22A022
   "763":
   - 763.4E3.22032D|fc=1:Fiat_HIGHBEAMS_MODE,Fiat_HIGHBEAMS_ON,Fiat_REAR_WIPER
   "7AB":
