@@ -1,3 +1,7 @@
+references:
+  - "https://en.wikipedia.org/wiki/Fiat_500"
+  - "https://en.wikipedia.org/wiki/Fiat_500_(2007)"
+
 generations:
   - name: "Original (Nuova 500)"
     start_year: 1957
@@ -6,5 +10,5 @@ generations:
 
   - name: "Modern Fiat 500 (Type 312)"
     start_year: 2007
-    end_year: null
-    description: "The modern Fiat 500 was introduced on the 50th anniversary of the original model, featuring retro-inspired styling that evoked the 1957 version but with contemporary engineering and safety features. Built on Fiat's Mini platform shared with the Panda, it maintained compact dimensions but with significantly more interior space and comfort than its predecessor. Initially powered by a range of small gasoline and diesel engines, including the 1.4L 16v with 100 HP in the Sport variant, the engine lineup evolved over time to include more efficient turbocharged options like the TwinAir and MultiAir units. The interior combined vintage-inspired design elements with modern technology, featuring a body-colored dashboard panel and circular design motifs. A significant mid-life update in 2015 brought over 1,800 changes, including updated styling, improved infotainment, and enhanced safety features. Special variants have included the performance-oriented Abarth models, the 500C with a retractable fabric roof, and numerous limited and special editions featuring designer collaborations. Despite its age, the Type 312 platform continues in production alongside the newer electric 500, maintaining its popularity as a style-focused city car with immense personalization options. Throughout its production, the modern 500 has maintained its essence as a fashionable, premium small car that successfully reinterpreted a classic design for contemporary consumers."
+    end_year: 2024
+    description: "The modern Fiat 500 was introduced on the 50th anniversary of the original model, featuring retro-inspired styling that evoked the 1957 version but with contemporary engineering and safety features. Built on Fiat's Mini platform shared with the Panda, it maintained compact dimensions but with significantly more interior space and comfort than its predecessor. Initially powered by a range of small gasoline and diesel engines, including the 1.4L 16v with 100 HP in the Sport variant, the engine lineup evolved over time to include more efficient turbocharged options like the TwinAir and MultiAir units. The interior combined vintage-inspired design elements with modern technology, featuring a body-colored dashboard panel and circular design motifs. A significant mid-life facelift in 2016 brought updated styling, improved infotainment, and enhanced safety features. Special variants have included the performance-oriented Abarth models, the 500C with a retractable fabric roof, and numerous limited and special editions featuring designer collaborations. Production ended in August 2024 in Poland, after 17 years of continuous production. Throughout its production, the modern 500 has maintained its essence as a fashionable, premium small car that successfully reinterpreted a classic design for contemporary consumers."
