@@ -1,0 +1,8 @@
+command_id: DA10.10.22194F|din=03
+test_cases:
+- expected_values:
+    Fiat_OIL_PUMP: 0
+  response: 18DAF1100562194F005E
+- expected_values:
+    Fiat_OIL_PUMP: 0
+  response: 18DAF1100562194F005F
