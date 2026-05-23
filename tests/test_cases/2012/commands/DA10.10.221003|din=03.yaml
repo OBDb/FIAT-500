@@ -1,0 +1,10 @@
+command_id: DA10.10.221003|din=03
+test_cases:
+- expected_values:
+    Fiat_ECT_ECU: -37.38
+  response: 18DAF110056210030083
+- expected_values:
+    Fiat_ECT_ECU: -37.38
+  response: |-
+    221003
+    18DAF110056210030083
