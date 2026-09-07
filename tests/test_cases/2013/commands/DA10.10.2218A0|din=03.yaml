@@ -1,0 +1,5 @@
+command_id: DA10.10.2218A0|din=03
+test_cases:
+- expected_values:
+    Fiat_VGT_ACT: 2.73136
+  response: 18DAF110056218A006FE

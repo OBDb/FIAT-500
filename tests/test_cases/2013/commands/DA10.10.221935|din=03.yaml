@@ -1,0 +1,5 @@
+command_id: DA10.10.221935|din=03
+test_cases:
+- expected_values:
+    Fiat_IAT_TURBO: -38.18
+  response: 18DAF11005621935005B

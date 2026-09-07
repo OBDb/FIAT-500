@@ -1,0 +1,5 @@
+command_id: DA10.10.2218A4|fc=1,din=03
+test_cases:
+- expected_values:
+    Fiat_REGEN_TOTAL: 1778
+  response: 18DAF110056218A406F2
