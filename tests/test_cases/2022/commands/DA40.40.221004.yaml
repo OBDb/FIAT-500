@@ -4,6 +4,9 @@ test_cases:
     Fiat_BATT_V_BCM: 14.5
   response: 18DAF1400462100491
 - expected_values:
+    Fiat_BATT_V_BCM: 4.8
+  response: 18DAF1400562100430C0
+- expected_values:
     Fiat_BATT_V_BCM: 5
   response: 18DAF1400562100432A0
 - expected_values:
