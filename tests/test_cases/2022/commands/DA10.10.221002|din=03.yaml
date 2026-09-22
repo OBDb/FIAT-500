@@ -1,0 +1,29 @@
+command_id: DA10.10.221002|din=03
+test_cases:
+- expected_values:
+    Fiat_ENGINE_STATUS: 0
+  response: 18DAF110056210020000
+- expected_values:
+    Fiat_ENGINE_STATUS: 1384
+  response: 18DAF110056210020568
+- expected_values:
+    Fiat_ENGINE_STATUS: 1912
+  response: 18DAF110056210020778
+- expected_values:
+    Fiat_ENGINE_STATUS: 1992
+  response: 18DAF1100562100207C8
+- expected_values:
+    Fiat_ENGINE_STATUS: 2296
+  response: 18DAF1100562100208F8
+- expected_values:
+    Fiat_ENGINE_STATUS: 2328
+  response: 18DAF110056210020918
+- expected_values:
+    Fiat_ENGINE_STATUS: 3840
+  response: 18DAF110056210020F00
+- expected_values:
+    Fiat_ENGINE_STATUS: 6424
+  response: 18DAF110056210021918
+- expected_values:
+    Fiat_ENGINE_STATUS: 7776
+  response: 18DAF110056210021E60
