@@ -1,17 +1,14 @@
-command_id: DA40.40.221004
+command_id: DA40.40.221004|f=2020-
 test_cases:
 - expected_values:
-    Fiat_BATT_V_BCM: 14.5
-  response: 18DAF1400462100491
-- expected_values:
-    Fiat_BATT_V_BCM: 4.8
+    500_BATT_V_BCM_MV: 12.48
   response: 18DAF1400562100430C0
 - expected_values:
-    Fiat_BATT_V_BCM: 5
+    500_BATT_V_BCM_MV: 12.96
   response: 18DAF1400562100432A0
 - expected_values:
-    Fiat_BATT_V_BCM: 5.1
+    500_BATT_V_BCM_MV: 13.12
   response: 18DAF140056210043340
 - expected_values:
-    Fiat_BATT_V_BCM: 5.1
+    500_BATT_V_BCM_MV: 13.28
   response: 18DAF1400562100433E0

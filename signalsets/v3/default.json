@@ -1,4 +1,268 @@
 { "commands": [
-
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"21": "18"}, "freq": 1,
+  "signals": [
+    {"id": "500_TOT", "path": "Transmission", "fmt": { "len": 16, "max": 512, "min": -512, "div": 4, "sign": true, "unit": "fahrenheit" }, "name": "Transmission oil temperature", "suggestedMetric": "transmissionFluidTemperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1000"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021], "from": 2023 },
+  "signals": [
+    {"id": "500_RPM_DA10", "path": "Engine", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Engine RPM"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1002"}, "freq": 30, "dbgfilter": { "to": 2011, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021], "from": 2023 },
+  "signals": [
+    {"id": "500_ENGINE_STATUS", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Engine operational status"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1003"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2014 },
+  "signals": [
+    {"id": "500_ECT_ECU", "path": "Engine", "fmt": { "len": 16, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Coolant temperature", "suggestedMetric": "engineCoolantTemperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1009"}, "freq": 3600, "dbgfilter": { "to": 2011, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021], "from": 2023 },
+  "signals": [
+    {"id": "500_WATER_FUEL_DIST", "path": "DTCs", "fmt": { "len": 16, "max": 65535, "unit": "kilometers" }, "name": "Distance with water in fuel warning"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1820"}, "freq": 1,
+  "signals": [
+    {"id": "500_CANISTER_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Canister duty cycle"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1821"}, "freq": 1,
+  "signals": [
+    {"id": "500_WASTE_GATE_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 99.99, "mul": 0.00152587, "unit": "percent" }, "name": "Waste gate duty"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1824"}, "freq": 5,
+  "signals": [
+    {"id": "500_EXH_GAS_T_DA10", "path": "Engine", "fmt": { "len": 16, "max": -1196, "min": -2731, "mul": 0.023437, "add": -2731, "unit": "celsius" }, "name": "Exhaust gas temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1827"}, "freq": 1,
+  "signals": [
+    {"id": "500_TURBO_BOOST_P", "path": "Engine", "fmt": { "len": 16, "max": 51195, "mul": 1953, "div": 2500, "unit": "kilopascal" }, "name": "Turbo boost pressure"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1845"}, "freq": 1,
+  "signals": [
+    {"id": "500_CANISTER_CHG", "path": "Battery", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Canister charge"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1862"}, "freq": 0.25,
+  "signals": [
+    {"id": "500_THROTTLE_BODY_OPENING", "path": "Engine", "fmt": { "len": 8, "max": 6.22, "mul": 0.024414, "unit": "percent" }, "name": "Throttle body opening"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1867"}, "freq": 0.25,
+  "signals": [
+    {"id": "500_THROTTLE_BODY", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Throttle body opening"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "186B"}, "freq": 0.25,
+  "signals": [
+    {"id": "500_TGT_RPM", "path": "Movement", "fmt": { "len": 16, "max": 16383, "div": 4, "unit": "rpm" }, "name": "Target engine speed"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1891"}, "freq": 1,
+  "signals": [
+    {"id": "500_KNOCK_V_CYL_1", "path": "Battery", "fmt": { "len": 16, "max": 327675, "mul": 5, "unit": "millivolts" }, "name": "Knock voltage, cylinder 1"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1892"}, "freq": 1,
+  "signals": [
+    {"id": "500_KNOCK_V_CYL_2", "path": "Battery", "fmt": { "len": 16, "max": 327675, "mul": 5, "unit": "millivolts" }, "name": "Knock voltage, cylinder 2"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1893"}, "freq": 1,
+  "signals": [
+    {"id": "500_KNOCK_V_CYL_3", "path": "Battery", "fmt": { "len": 16, "max": 327675, "mul": 5, "unit": "millivolts" }, "name": "Knock voltage, cylinder 3"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1894"}, "freq": 1,
+  "signals": [
+    {"id": "500_KNOCK_V_CYL_4", "path": "Battery", "fmt": { "len": 16, "max": 327675, "mul": 5, "unit": "millivolts" }, "name": "Knock voltage, cylinder 4"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "189A"}, "freq": 1,
+  "signals": [
+    {"id": "500_EGR_VLV_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 131, "div": 500, "unit": "percent" }, "name": "Exhaust gas recirculation valve duty"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "189F"}, "freq": 2,
+  "signals": [
+    {"id": "500_VGT_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Turbocharger vane position commanded"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18A0"}, "freq": 2, "dbgfilter": { "to": 2011, "from": 2014 },
+  "signals": [
+    {"id": "500_VGT_ACT", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Turbocharger vane position actual"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "fcm1": true, "din": "03", "cmd": {"22": "18A4"}, "freq": 3600, "dbgfilter": { "to": 2011, "from": 2014 },
+  "signals": [
+    {"id": "500_REGEN_STARTED_TOT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Particulate filter regeneration starts, total"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18A8"}, "freq": 1,
+  "signals": [
+    {"id": "500_LAMBDA_HEATER_DUTY", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 20, "div": 13107, "unit": "percent" }, "name": "Lambda heater duty"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18AD"}, "freq": 0.25,
+  "signals": [
+    {"id": "500_ENG_TQ_DA10", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "newtonMeters" }, "name": "Engine torque"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18AE"}, "freq": 3600, "dbgfilter": { "to": 2011, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021], "from": 2023 },
+  "signals": [
+    {"id": "500_REGEN_CONSEC_INTERRUPTED", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Particulate filter regeneration interruptions, consecutive"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18B1"}, "freq": 0.25,
+  "signals": [
+    {"id": "500_ENG_TQ_DA10_2", "path": "Engine", "fmt": { "len": 16, "max": 4095, "div": 16, "unit": "newtonMeters" }, "name": "Engine torque"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "18BA"}, "freq": 5,
+  "signals": [
+    {"id": "500_EXH_GAS_T", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "celsius" }, "name": "Exhaust gas temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18D0"}, "freq": 1,
+  "signals": [
+    {"id": "500_MPROP_CMD", "path": "Engine", "fmt": { "len": 16, "max": 100, "div": 100, "unit": "percent" }, "name": "M-Prop injection command"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "18EC"}, "freq": 5,
+  "signals": [
+    {"id": "500_FORCED_REGEN", "path": "Emissions", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Forced regen state"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "18ED"}, "freq": 2, "dbgfilter": { "to": 2011, "from": 2014 },
+  "signals": [
+    {"id": "500_LAMBDA_DPF_DS", "path": "Emissions", "fmt": { "len": 16, "max": 25, "div": 512, "unit": "percent" }, "name": "Lambda downstream DPF O2 concentration"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1900"}, "freq": 5,
+  "signals": [
+    {"id": "500_FUEL_T_DA10", "path": "Fuel", "fmt": { "len": 16, "max": 615, "min": -695, "div": 50, "add": -40, "sign": true, "unit": "celsius" }, "name": "Fuel temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "190B"}, "freq": 0.25,
+  "signals": [
+    {"id": "500_VSS_ECU", "path": "Movement", "fmt": { "len": 16, "max": 300, "unit": "kilometersPerHour" }, "name": "Vehicle speed, engine module", "suggestedMetric": "speed"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "192B"}, "freq": 1,
+  "signals": [
+    {"id": "500_CRUISE_CTRL_TGT", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "kilometersPerHour" }, "name": "Cruise control, target"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "192D"}, "freq": 1, "dbgfilter": { "to": 2011, "years": [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021], "from": 2023 },
+  "signals": [
+    {"id": "500_GEAR_ECU", "path": "Transmission", "fmt": { "len": 8, "max": 9, "unit": "scalar" }, "name": "Gear engaged"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "192F"}, "freq": 1,
+  "signals": [
+    {"id": "500_AC_P_DA10", "path": "Engine", "fmt": { "len": 16, "max": 655350, "mul": 10, "unit": "unknown" }, "name": "Air conditioning pressure"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "1935"}, "freq": 5, "dbgfilter": { "to": 2011, "from": 2014 },
+  "signals": [
+    {"id": "500_IAT_TURBO", "path": "Engine", "fmt": { "len": 16, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "IAT post-intercooler"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "193A"}, "freq": 1,
+  "signals": [
+    {"id": "500_TURBO_BOOST_ACTUATOR", "path": "Engine", "fmt": { "len": 8, "max": 99.22, "min": -100, "mul": 7813, "div": 10000, "sign": true, "unit": "percent" }, "name": "Turbo boost actuator duty"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "193F"}, "freq": 5, "dbgfilter": { "to": 2012, "from": 2014 },
+  "signals": [
+    {"id": "500_MAF_TEMP", "path": "Engine", "fmt": { "len": 16, "max": 200, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Mass airflow sensor temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1942"}, "freq": 1,
+  "signals": [
+    {"id": "500_INSTANT_FUEL_FLOW", "path": "Fuel", "fmt": { "len": 16, "max": 131, "div": 500, "unit": "liters" }, "name": "Instant fuel flow"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "1946"}, "freq": 1,
+  "signals": [
+    {"id": "500_RAIL_PRESS_CMD", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bars" }, "name": "Fuel rail pressure commanded"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "1947"}, "freq": 1,
+  "signals": [
+    {"id": "500_RAIL_PRESS", "path": "Engine", "fmt": { "len": 16, "max": 3000, "div": 20, "unit": "bars" }, "name": "Fuel rail pressure measured"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1948"}, "freq": 1,
+  "signals": [
+    {"id": "500_FUEL_RAMP_P_ADC", "path": "Fuel", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "millivolts" }, "name": "Fuel ramp pressure ADC"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "cmd": {"22": "194F"}, "freq": 30, "dbgfilter": { "to": 2011, "from": 2014 },
+  "signals": [
+    {"id": "500_OIL_PUMP", "path": "Engine", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable oil pump position"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "1955"}, "freq": 30,
+  "signals": [
+    {"id": "500_BATT_V_ECU", "path": "Battery", "fmt": { "len": 16, "max": 20, "div": 2000, "unit": "volts" }, "name": "Battery voltage"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1959"}, "freq": 1,
+  "signals": [
+    {"id": "500_TURBO_BOOST_CMD", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "unknown" }, "name": "Turbo boost, commanded"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "195A"}, "freq": 1,
+  "signals": [
+    {"id": "500_BOOST", "path": "Engine", "fmt": { "len": 16, "max": 300, "min": -100, "div": 10, "add": -3276.8, "unit": "kilopascal" }, "name": "Turbo boost pressure"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "195B"}, "freq": 1,
+  "signals": [
+    {"id": "500_TURBO_BOOST_ADC", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "millivolts" }, "name": "Turbo boost ADC"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "196F"}, "freq": 1,
+  "signals": [
+    {"id": "500_VARIABLE_VLV_TIM_PHASE", "path": "Engine", "fmt": { "len": 8, "max": 99.6, "mul": 25, "div": 64, "unit": "percent" }, "name": "Variable valve timing phase duty"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "1970"}, "freq": 1,
+  "signals": [
+    {"id": "500_VARIABLE_VLV_TIM", "path": "Engine", "fmt": { "len": 16, "max": 6553, "div": 10, "unit": "percent" }, "name": "Variable valve timing phase duty"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "198C"}, "freq": 1,
+  "signals": [
+    {"id": "500_VARIABLE_VLV_TIM_OPERATION", "path": "Engine", "fmt": {"bix": 3, "len": 5, "max": 31, "unit": "scalar" }, "name": "Variable valve timing operation mode"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "198E"}, "freq": 5,
+  "signals": [
+    {"id": "500_VARIABLE_VLV_TIM_OIL_T_DA10", "path": "Engine", "fmt": { "len": 16, "max": 4095, "div": 16, "unit": "celsius" }, "name": "Variable valve timing oil temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "19BD"}, "freq": 1,
+  "signals": [
+    {"id": "500_BAT_ST_CHG", "path": "Battery", "fmt": { "len": 8, "max": 255, "unit": "percent" }, "name": "Battery state of charge"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2001"}, "freq": 30,
+  "signals": [
+    {"id": "500_ODO", "path": "Trips", "fmt": { "len": 24, "max": 1677721, "div": 10, "unit": "kilometers" }, "name": "Odometer"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2005"}, "freq": 0.25,
+  "signals": [
+    {"id": "500_MAX_RPM_REACHED", "path": "Movement", "fmt": { "len": 8, "max": 5080, "min": -5120, "mul": 40, "sign": true, "unit": "celsius" }, "name": "Max RPM reached"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3800"}, "freq": 2,
+  "signals": [
+    {"id": "500_FUEL_CORR_CYL1", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 1"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3801"}, "freq": 2,
+  "signals": [
+    {"id": "500_FUEL_CORR_CYL2", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 2"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3802"}, "freq": 2,
+  "signals": [
+    {"id": "500_FUEL_CORR_CYL3", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 3"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3803"}, "freq": 2,
+  "signals": [
+    {"id": "500_FUEL_CORR_CYL4", "path": "Engine", "fmt": { "len": 16, "max": 5, "min": -5, "div": 100, "sign": true, "unit": "milligramsPerStroke" }, "name": "Fuel correction cylinder 4"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3813"}, "freq": 3600,
+  "signals": [
+    {"id": "500_OIL_DEGRAD", "path": "Engine", "fmt": { "len": 16, "max": 100, "mul": 100, "div": 65535, "unit": "percent" }, "name": "Engine oil degradation"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "3912"}, "freq": 3600,
+  "signals": [
+    {"id": "500_REGEN_SUCCESSFULY", "path": "Engine", "fmt": { "len": 16, "max": 65535, "unit": "scalar" }, "name": "Particulate filter regeneration completions, total"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3914"}, "freq": 5,
+  "signals": [
+    {"id": "500_CATALYST_INLET_T", "path": "Emissions", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Catalyst inlet temperature"}
+  ]},
+{ "hdr": "DA10", "rax": "10", "din": "03", "dbg": true, "cmd": {"22": "3917"}, "freq": 5,
+  "signals": [
+    {"id": "500_EGR_COOLER_T", "path": "Engine", "fmt": { "len": 16, "max": 900, "min": -40, "mul": 2, "div": 100, "add": -40, "unit": "celsius" }, "name": "Exhaust gas recirculation cooler outlet temperature"}
+  ]},
+{ "hdr": "DA30", "rax": "30", "cmd": {"22": "0885"}, "freq": 0.1, "dbgfilter": { "to": 2011, "from": 2014 },
+  "signals": [
+    {"id": "500_STEER_ANGLE", "path": "Control", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "degrees" }, "name": "Steering wheel angle"}
+  ]},
+{ "hdr": "DA30", "rax": "30", "dbg": true, "cmd": {"22": "2962"}, "freq": 0.1,
+  "signals": [
+    {"id": "500_LAT_G",  "path": "Orientation", "fmt": {"bix": 4,   "len": 12, "max": 40.94, "min": -40.94, "div": 50, "add": -40.96, "nullmax": 40, "unit": "metersPerSecondSquared" }, "name": "Lateral acceleration"},
+    {"id": "500_LNG_G",  "path": "Orientation", "fmt": {"bix": 20,  "len": 12, "max": 40.94, "min": -40.94, "div": 50, "add": -40.96, "nullmax": 40, "unit": "metersPerSecondSquared" }, "name": "Longitudinal acceleration"},
+    {"id": "500_FL_VSS", "path": "Movement",    "fmt": {"bix": 112, "len": 16, "max": 4095,                 "div": 16,                               "unit": "kilometersPerHour"      }, "name": "Front left wheel speed"},
+    {"id": "500_RL_VSS", "path": "Movement",    "fmt": {"bix": 144, "len": 16, "max": 4095,                 "div": 16,                               "unit": "kilometersPerHour"      }, "name": "Rear left wheel speed"},
+    {"id": "500_FR_VSS", "path": "Movement",    "fmt": {"bix": 176, "len": 16, "max": 4095,                 "div": 16,                               "unit": "kilometersPerHour"      }, "name": "Front right wheel speed"},
+    {"id": "500_RR_VSS", "path": "Movement",    "fmt": {"bix": 208, "len": 16, "max": 4095,                 "div": 16,                               "unit": "kilometersPerHour"      }, "name": "Rear right wheel speed"}
+  ]},
+{ "hdr": "DA40", "rax": "40", "cmd": {"22": "1004"}, "freq": 30, "filter": { "to": 2019 }, "dbgfilter": { "to": 2011, "years": [2014, 2015, 2016, 2017, 2018] },
+  "signals": [
+    {"id": "500_BATT_V_BCM", "path": "Battery", "fmt": { "len": 8, "max": 40.8, "mul": 0.16, "unit": "volts" }, "name": "Battery voltage, BCM"}
+  ]},
+{ "hdr": "DA40", "rax": "40", "cmd": {"22": "1004"}, "freq": 30, "filter": { "from": 2020 }, "dbgfilter": { "years": [2021], "from": 2023 },
+  "signals": [
+    {"id": "500_BATT_V_BCM_MV", "path": "Battery", "fmt": { "len": 16, "max": 65.535, "div": 1000, "unit": "volts" }, "name": "Battery voltage, BCM"}
+  ]}
 ]
 }

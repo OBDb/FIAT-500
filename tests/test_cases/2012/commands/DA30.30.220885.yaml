@@ -1,11 +1,11 @@
 command_id: DA30.30.220885
 test_cases:
 - expected_values:
-    Fiat_STEER_ANGLE: -720
+    500_STEER_ANGLE: 0
   response: 18DAF130056208850000
 - expected_values:
-    Fiat_STEER_ANGLE: 720
+    500_STEER_ANGLE: -128.1
   response: 18DAF13005620885FAFF
 - expected_values:
-    Fiat_STEER_ANGLE: 720
+    500_STEER_ANGLE: -25.4
   response: 18DAF13005620885FF02
